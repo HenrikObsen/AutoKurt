@@ -1,0 +1,27 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="AdvSoeg.aspx.cs" Inherits="AdvSoeg" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <h1>Advanceret søgning</h1>
+    <asp:DropDownList ID="ddlProducent" runat="server" />
+    <br/>
+    Maxpris: <asp:TextBox ID="txtMaxpris" runat="server"/> 
+    <br/>
+    Søgeord: <asp:TextBox ID="txtKeyword" runat="server"/> 
+    <br/>
+    <asp:Button ID="btnSoeg" runat="server" Text="Søg" OnClick="btnSoeg_Click" />
+    <hr/>
+    <asp:Literal ID="litResultat" runat="server" />
+    </div>
+    </form>
+</body>
+</html>
+
+
